@@ -1,3 +1,6 @@
+# https://xiang1023.blogspot.com/2017/09/python-pyautogui.html
+# https://codeloop.org/python-how-to-create-digital-clock-with-pyside2/
+
 from PySide2.QtWidgets import QApplication, QWidget, QLCDNumber
 from PySide2.QtCore import QTime, QTimer, SIGNAL
 import sys
