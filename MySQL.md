@@ -1,3 +1,8 @@
+https://www.itread01.com/content/1549041301.html   
+https://ithelp.ithome.com.tw/articles/10215161      
+https://jerrynest.io/mysql-tutorial/   
+
+
 ```
 https://docs.microsoft.com/zh-tw/azure/mysql/connect-workbench
 建立資料表、將資料插入、讀取資料、更新資料、刪除資料
