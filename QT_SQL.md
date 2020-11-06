@@ -126,4 +126,64 @@ https://codeloop.org/pyqt5-tutorial-working-with-qt-designer/
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+A.py
+
+from B import b2
+def a1():
+    print('a1')
+    b2()
+B.py
+
+def b1():
+   from A import a1
+   print('b1')
+   a1()
+
+def b2():
+   print('b2')
+if __name__ == '__main__':
+   b1() 
+   
+   
+   
+主檔名   
+mydatabase.py
+
+主檔內容
+from SqlData import Ent ###
+    def database_C(self):
+        print('C')
+        Ent.db_Create()
+    def database_R(self):
+        print('R')
+        Ent.db_Read()
+    def database_U(self):
+        print('U')
+        Ent.db_Update()
+    def database_D(self):
+        print('D')
+        Ent.db_Delete()
+
+子檔名
+SqlData.py
+
+子檔內容
+class Ent:   
+    def db_Create():
+    def db_Read():
+    def db_Update():
+    
 ```
