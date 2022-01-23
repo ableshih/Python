@@ -26,6 +26,6 @@ https://www.youtube.com/watch?v=-IC-Z78aTOs
 ## ino
 ```
 char ssid[] = "iPhone";     // your network SSID (name)
-char password[] = "0928813308"; // your network password
-#define TELEGRAM_BOT_TOKEN "1031554073:AAGZANGKGUSVBErQMl52W5URoq2iYzy7p-8"
+char password[] = "0928813111"; // your network password
+#define TELEGRAM_BOT_TOKEN "1031554073:AAGZANGKGUSVBErQ1l52W5URoq2iYzy7p-8"
 ```
