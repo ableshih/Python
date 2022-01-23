@@ -231,3 +231,57 @@ while True:
 
 
 ```
+
+# VS code issue
+## 路徑
+專案路徑與開檔路徑
+
+### 開啟一
+目錄是開在 py
+```        
+└───py         
+    └───pygame1  
+        │   main.py
+        │   font.ttf    
+        │   ...
+        └───img
+        │   │   background.png
+        │   │   rock.png
+        │   │   ...
+        │   
+        └───sound
+            │   shoot.wav
+            │   background.ogg
+            │   ...
+        
+```
+
+```python=        
+bg_img = pygame.image.load(os.path.join('pygame1/img/background.png')).convert()
+```
+---
+### 開啟二
+目錄是開在 pygame1
+```            
+└───pygame1  
+    │   main.py
+    │   font.ttf    
+    │   ...
+    └───img
+    │   │   background.png
+    │   │   rock.png
+    │   │   ...
+    │   
+    └───sound
+        │   shoot.wav
+        │   background.ogg
+        │   ...
+```
+
+```python=
+bg_img = pygame.image.load(os.path.join('img/background.png')).convert()
+
+bg_img = pygame.image.load(os.path.join("img", "player.png")).convert()
+```
+---
+
