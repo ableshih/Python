@@ -23,7 +23,7 @@
 
         执行语句4……
 ```
-```
+```python
 if condition_1:
     statement_block_1
 elif condition_2:
@@ -31,7 +31,7 @@ elif condition_2:
 else:
     statement_block_3
 ```    
-```
+```python
 #!/usr/bin/python3
  
 var1 = 100
@@ -52,7 +52,7 @@ print ("Good bye!")
 Good bye!
 ```
 ### while
-```
+```python
 #!/usr/bin/env python3
  
 n = 100
@@ -68,7 +68,7 @@ print("1 到 %d 之和为: %d" % (n,sum))
 执行结果如下：
 1 到 100 之和为: 5050
 ```
-```
+```python
 无限循环
 我们可以通过设置条件表达式永远不为 false 来实现无限循环，实例如下：
 
@@ -90,7 +90,7 @@ print ("Good bye!")
 
 
 ### pass 
-```
+```python
 pass 语句
 
 Python pass 是空语句，是为了保持程序结构的完整性。
@@ -107,7 +107,7 @@ def function():
 
   pass
 ```
-```
+```python
 Python pass是空语句，是为了保持程序结构的完整性。
 
 pass 不做任何事情，一般用做占位语句，如下实例
@@ -143,7 +143,7 @@ print ("Good bye!")
 Good by!
 ```
 ### 函数
-```
+```python
 语法
 Python 定义函数使用 def 关键字，一般格式如下：
 
@@ -161,7 +161,7 @@ def hello() :
 
 hello()
 ```
-```
+```python
 更复杂点的应用，函数中带上参数变量:
 
 实例 
@@ -182,7 +182,7 @@ print(max(a, b))
 以上实例输出结果： 5
 ```
 
-```
+```python
 计算面积函数:
 
 #!/usr/bin/python3
@@ -203,7 +203,7 @@ print("width =", w, " height =", h, " area =", area(w, h))
 Welcome Runoob
 width = 4  height = 5  area = 20
 ```
-```
+```python
 函数调用
 定义一个函数：给了函数一个名称，指定了函数里包含的参数，和代码块结构。
 
@@ -229,7 +229,7 @@ printme("再次调用同一函数")
 再次调用同一函数
 ```
 ### return语句
-```
+```python
 return语句
 return [表达式] 语句用于退出函数，选择性地向调用方返回一个表达式。不带参数值的return语句返回None。之前的例子都没有示范如何返回数值，以下实例演示了 return 语句的用法：
 
@@ -253,7 +253,7 @@ print ("函数外 : ", total)
 ```
 
 ### from … import 
-```
+```python
 from … import 语句
 Python 的 from 语句让你从模块中导入一个指定的部分到当前命名空间中，语法如下：
 
@@ -266,7 +266,7 @@ from modname import name1[, name2[, ... nameN]]
 这个声明不会把整个fibo模块导入到当前的命名空间中，它只会将fibo里的fib函数引入进来。
 ```
 ### from … import * 
-```
+```python
 from … import * 语句
 把一个模块的所有内容全都导入到当前的命名空间也是可行的，只需使用如下声明：
 
@@ -275,7 +275,7 @@ from modname import *
 ```
 
 ### __name__
-```
+```python
 __name__属性
 一个模块被另一个程序第一次引入时，其主程序将运行。如果我们想在模块被引入时，模块中的某一程序块不执行，我们可以用__name__属性来使该程序块仅在该模块自身运行时执行。
 
@@ -296,7 +296,7 @@ $ python
 >>>
 ```
 ### 读取键盘输入
-```
+```python
 读取键盘输入
 Python 提供了 input() 内置函数从标准输入读入一行文本，默认的标准输入是键盘。
 
@@ -311,13 +311,13 @@ print ("你输入的内容是: ", str)
 你输入的内容是:  菜鸟教程
 ```
 ### 读和写文件
-```
+```python
 读和写文件
 open() 将会返回一个 file 对象，基本语法格式如下:
 
 open(filename, mode)
 ```
-```
+```python
 #!/usr/bin/python3
 
 # 打开一个文件
@@ -329,7 +329,7 @@ f.write( "Python 是一个非常好的语言。\n是的，的确非常好!!\n" )
 f.close()
 ```
 ### continue
-```
+```python
 continue 语句
 
 Python continue 语句跳出本次循环，而break跳出整个循环。
@@ -363,7 +363,7 @@ while n < 10:
   print(n)
 ```
 ### break
-```
+```python
 Python break 语句
 
 Python break语句，就像在C语言中，打破了最小封闭for或while循环。
@@ -421,7 +421,7 @@ print "Good bye!"
 
 
 ### b
-```
+```python
 #!/usr/bin/python3
  
 count = 0
@@ -440,7 +440,7 @@ else:
 5  大于或等于 5
 ```
 ### while 循环使用 else 语句
-```
+```python
 如果 while 后面的条件语句为 false 时，则执行 else 的语句块。
 
 语法格式如下：
@@ -477,7 +477,7 @@ else:
 
 
 ### for
-```
+```python
 for <variable> in <sequence>:
     <statements>
 else:
@@ -485,7 +485,7 @@ else:
 
 ```
 
-```
+```python
 #!/usr/bin/python3
  
 sites = ["Baidu", "Google","Runoob","Taobao"]
@@ -505,7 +505,7 @@ print("完成循环!")
 完成循环!
 ```
 
-```
+```python
 for 循环嵌套语法：
 
 
@@ -553,7 +553,7 @@ print ("Good bye!")
 
 ```
 
-```
+```python
 #!/usr/bin/python
 
 # -*- coding: UTF-8 -*-
@@ -575,7 +575,7 @@ for num in range(10,20):  # 迭代 10 到 20 之间的数字
       print ('%d 是一个质数' % num)
 ```
 ### range
-```
+```python
 range()函数
 如果你需要遍历数字序列，可以使用内置range()函数。它会生成数列，例如:
 
@@ -616,7 +616,7 @@ range()函数
 >>>
 ```
 ### while
-```
+```python
 while 循环嵌套语法：
 
 
@@ -662,7 +662,7 @@ print "Good bye!"
 
 ```
 ### 类对象
-```
+```python
 类对象
 类对象支持两种操作：属性引用和实例化。
 
@@ -693,7 +693,7 @@ MyClass 类的属性 i 为： 12345
 MyClass 类的方法 f 输出为： hello world
 ```
 ### self代表类的实例
-```
+```python
 self代表类的实例，而非类
 类的方法与普通的函数只有一个特别的区别——它们必须有一个额外的第一个参数名称, 按照惯例它的名称是 self。
 
@@ -710,7 +710,7 @@ t.prt()
 __main__.Test
 ```
 ### 类的方法
-```
+```python
 类的方法
 在类的内部，使用 def 关键字来定义一个方法，与一般函数定义不同，类方法必须包含参数 self, 且为第一个参数，self 代表的是类的实例。
 
@@ -740,7 +740,7 @@ p.speak()
 runoob 说: 我 10 岁。
 ```
 ### 继承
-```
+```python
 #!/usr/bin/python3
  
 #类定义
@@ -780,7 +780,7 @@ ken 说: 我 10 岁了，我在读 3 年级
 
 ### 判斷式
 #### try except 錯誤與異常
-```
+```python
 while True:
     try:
         x = int(input("请输入一个数字: "))
@@ -788,7 +788,7 @@ while True:
     except ValueError:
         print("您输入的不是数字，请再次尝试输入！")
 ```
-```
+```python
 import sys
 
 try:
@@ -803,7 +803,7 @@ except:
     print("Unexpected error:", sys.exc_info()[0])
     raise
 ```
-```
+```python
 for arg in sys.argv[1:]:
     try:
         f = open(arg, 'r')
@@ -815,7 +815,7 @@ for arg in sys.argv[1:]:
 ```
 
 ### 多继承
-```
+```python
 #!/usr/bin/python3
  
 #类定义
@@ -871,7 +871,7 @@ test.speak()   #方法名同，默认调用的是在括号中参数位置排前�
 
 
 ### 获取格式化的时间
-```
+```python
 
 
 
@@ -951,7 +951,7 @@ Thu Apr 07 10:25:09 2016
 ### 模組import
 #### 日期和时间
 ##### 获取当前时间
-```
+```python
 获取当前时间
 
 从返回浮点数的时间戳方式向时间元组转换，只要将浮点数传递给如localtime之类的函数。
@@ -975,7 +975,7 @@ localtime = time.localtime(time.time())
 print "本地时间为 :", localtime
 ```
 ### 获取某月日历
-```
+```python
 获取某月日历
 
 Calendar模块有很广泛的方法用来处理年历和月历，例如打印某月的月历：
@@ -1002,7 +1002,7 @@ print cal
 ```
 
 ### 函式
-```
+```python
 def functionname( parameters ):
 
    "函数_文档字符串"
@@ -1012,7 +1012,7 @@ def functionname( parameters ):
    return [expression]
 ```
 
-```
+```python
 #!/usr/bin/python
 
 # -*- coding: UTF-8 -*-
@@ -1034,7 +1034,7 @@ printme("我要调用用户自定义函数!")
 printme("再次调用同一函数")
 ```
 
-```
+```python
 传不可变对象实例
 
 实例(Python 2.0+)
@@ -1058,7 +1058,7 @@ ChangeInt(b)
 print b # 结果是 2
 ```
 
-```
+```python
 传可变对象实例
 
 实例(Python 2.0+)
@@ -1100,7 +1100,7 @@ print "函数外取值: ", mylist
 函数外取值: [10, 20, 30, [1, 2, 3, 4]]
 ```
 
-```
+```python
 #!/usr/bin/python
 
 # -*- coding: UTF-8 -*-
@@ -1120,7 +1120,7 @@ def printme( str ):
 printme()
 ```
 
-```
+```python
 关键字参数
 
 关键字参数和函数调用关系紧密，函数调用使用关键字参数来确定传入的参数值。
@@ -1160,11 +1160,11 @@ My string
 
 
 ### print
-```
+```python
 print ("Hello, Python!")
 ```
 
-```
+```python
 符串，如下实例：
 
 
@@ -1419,7 +1419,7 @@ there
 ```
 
 ### 元组
-```
+```python
 
 Python的元组与列表类似，不同之处在于元组的元素不能修改。
 
@@ -1473,7 +1473,7 @@ tup2[1:5]: (2, 3, 4, 5)
 ```
 
 ### 字典(Dictionary)
-```
+```python
 字典(Dictionary)
 
 字典是另一种可变容器模型，且可存储任意类型对象。
@@ -1523,7 +1523,7 @@ tinydict1 = { 'abc': 456 }
 tinydict2 = { 'abc': 123, 98.6: 37 }
 ```
 ### return 
-```
+```python
 return 语句
 
 return语句[表达式]退出函数，选择性地向调用方返回一个表达式。不带参数值的return语句返回None。之前的例子都没有示范如何返回数值，下例便告诉你怎么做：
@@ -1558,7 +1558,7 @@ total = sum( 10, 20 )
 ```
 
 ### 全局变量和局部变量
-```
+```python
 全局变量和局部变量
 
 定义在函数内部的变量拥有一个局部作用域，定义在函数外的拥有全局作用域。
@@ -1612,7 +1612,7 @@ print "函数外是全局变量 : ", total
 
 
 
-```
+```python
 #!/usr/bin/python3
  
 import json
@@ -1635,7 +1635,7 @@ JSON 对象： {"url": "http://www.runoob.com", "no": 1, "name": "Runoob"}
 
 
 
-```
+```python
 #!/usr/bin/python3
  
 import json
@@ -1664,7 +1664,7 @@ data2['url']:  http://www.runoob.com
 ```
 
 
-```
+```python
 # 写入 JSON 数据
 with open('data.json', 'w') as f:
     json.dump(data, f)
@@ -1676,7 +1676,7 @@ with open('data.json', 'r') as f:
 
 
 ## 线程优先级队列（ Queue）
-```
+```python
 #!/usr/bin/python3
 
 import queue
@@ -1756,7 +1756,7 @@ Thread-1 processing Five
 
 
 ## 正则表达式
-```
+```python
 Python3 正则表达式
 正则表达式是一个特殊的字符序列，它能帮助你方便的检查一个字符串是否与某种模式匹配。
 
@@ -1778,7 +1778,7 @@ re.match 尝试从字符串的起始位置匹配一个模式，如果不是起�
 re.match(pattern, string, flags=0)
 ```
 
-```
+```python
 #!/usr/bin/python3
 import re
  
@@ -1800,7 +1800,7 @@ matchObj.group(1) :  Cats
 matchObj.group(2) :  smarter
 ```
 
-```
+```python
 #!/usr/bin/python3
  
 import re
@@ -1813,7 +1813,7 @@ print(re.search('com', 'www.runoob.com').span())         # 不在起始位置匹
 (11, 14)
 ```
 
-```
+```python
 #!/usr/bin/python3
  
 import re
@@ -1834,7 +1834,7 @@ searchObj.group(1) :  Cats
 searchObj.group(2) :  smarter
 ```
 ## Python3 多线程
-```
+```python
 #!/usr/bin/python3
 
 import _thread
@@ -1874,7 +1874,7 @@ Thread-2: Wed Apr  6 11:36:49 2016
 
 ## threading
 
-```
+```python
 使用 threading 模块创建线程
 我们可以通过直接从 threading.Thread 继承创建一个新的子类，并实例化后调用 start() 方法启动新线程，即它调用了线程的 run() 方法：
 
@@ -1934,7 +1934,7 @@ Thread-2: Wed Apr  6 11:46:55 2016
 退出主线程
 ```
 ## 线程同步
-```
+```python
 #!/usr/bin/python3
 
 import threading
