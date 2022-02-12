@@ -1,0 +1,172 @@
+How to download, install and activate Office 2021 on Windows 11
+================================================================
+
+來源
+==================================================================================================================
+https://youtu.be/KxZww9qbR8c
+https://teevee.asia/microsoft-office/office-2021/how-to-download-install-and-activate-office-2021-on-windows-11/
+
+=============
+建立一個目錄
+=============
+
++++++++++++++++
+手動安裝方法
++++++++++++++++
+
+-------------------------------------------
+1. 下載 從 Microsoft 下載 Office 佈署工具
+-------------------------------------------
+https://www.microsoft.com/en-us/download/details.aspx?id=49117
+
+存到建立的目錄裡
+
+會得到 officedeploymenttool_14527-20178.exe 
+
+-----------------------------------------------
+2-1. 執行 officedeploymenttool_14527-20178.exe
+-----------------------------------------------
+會下載到五個檔案
+configuration-Office2019Enterprise.xml
+configuration-Office2021Enterprise.xml
+configuration-Office365-x86.xml
+configuration-Office365-x64.xml
+setup.exe 
+
+--------------------
+2-2. 將三個檔案刪除
+--------------------
+configuration-Office365-x86.xml
+configuration-Office365-x64.xml
+configuration-Office2019Enterprise.xml
+
+-------------------------------------------------
+2-3. 編輯 configuration-Office2021Enterprise.xml
+-------------------------------------------------
+改語言 (預設是英文)
+<Language ID="zh-tw" />
+
+將內文刪除
+    <Product ID="VisioPro2021Volume">
+      <Language ID="en-us" />
+    </Product>
+    <Product ID="ProjectPro2021Volume">
+      <Language ID="en-us" />
+    </Product>
+
+  <Remove All="True" />
+
+存檔
+
+---------------------------------------------------------
+3. 在目錄空白處 右鍵 終端機 (下載軟體安裝) 會花一點時間
+---------------------------------------------------------
+.\setup.exe /configure .\configuration-Office2021Enterprise.xml
+
+------------------
+4. 查看帳號狀態
+------------------
+4-1. 打開已安裝好的 word 
+4-2. 去看帳號狀態 為 未啟動 
+4-3. 關閉 word
+
+--------------
+5. 激活 啟動
+--------------
+5-1. win+s
+5-2. 輸入 cmd
+5-3. 以系統管理員身分執行
+5-4. 貼上下列四行 Activation commands
+
+if exist "C:\Program Files\Microsoft Office\Office16\ospp.vbs" cd /d "C:\Program Files\Microsoft Office\Office16"
+if exist "C:\Program Files (x86)\Microsoft Office\Office16\ospp.vbs" cd /d "C:\Program Files (x86)\Microsoft Office\Office16"
+
+cscript ospp.vbs /sethst:kms.teevee.asia
+cscript ospp.vbs /act
+
+------------------
+4. 查看帳號狀態
+------------------
+4-1. 打開已安裝好的 word 
+4-2. 去看帳號狀態 為 已啟動 
+4-3. 關閉 word
+
+
+
+++++++++++++++++++++++++++++++++++++++++++
+半自動安裝方法 Auto Install and Activate
+++++++++++++++++++++++++++++++++++++++++++
+
+---------
+1. 下載 
+---------
+http://u.pc.cd/3Cb or https://u.pcloud.link/publink/show?code=3Cb
+
+會得到 OfficeProPlus2021.zip (3.3 MB)
+
+---------
+2. 解壓 
+---------
+OfficeProPlus2021.zip
+
+------------------------------------------------------------
+3. 修改(預設是英文) configuration-Office2021Enterprise.xml
+------------------------------------------------------------
+ID="en-us" -> ID="zh-tw"
+
+-----------------------------------------------------------------
+4. 下載安裝
+-----------------------------------------------------------------
+點兩下 Installx64.bat (不用管理員身分 下載安裝 會花一點時間)
+
+------------------
+5. 查看帳號狀態
+------------------
+5-1. 打開已安裝好的 word 
+5-2. 去看帳號狀態 為 未啟動 
+5-3. 關閉 word
+
+
+--------------
+6. 激活 啟動
+--------------
+右鍵 用管理員 執行
+Activator.bat
+
+------------------
+7. 查看帳號狀態
+------------------
+7-1. 打開已安裝好的 word 
+7-2. 去看帳號狀態 為 已啟動 
+7-3. 關閉 word
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+win+s 輸入 cmd 右鍵 用管理員開 貼上下列三行 KMS key
+slmgr.vbs /ipk W269N-WFGWX-YVC9B-4J6C9-T83GX
+slmgr.vbs /skms kms.teevee.asia
+slmgr.vbs /ato
