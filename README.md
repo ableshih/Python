@@ -1992,6 +1992,114 @@ Thread-2: Wed Apr  6 11:53:05 2016
 退出主线程
 ```
 
-
+# 123
+Python
+安裝
+Win
+分支主題
+環境
+Anaconda 
+VScode
+https://colab.research.google.com/
+QT
+Jupyter Notebook
+MicroPython
+Thonny
+PyCharm
+資源
+https://www.youtube.com/channel/UCazV3A3_1-Mtd6E_auw_ifg/videos
+https://www.youtube.com/c/%E9%9B%B6%E5%BA%A6%E8%A7%A3%E8%AF%B4/videos
+https://www.youtube.com/c/GrandmaCan%E6%88%91%E9%98%BF%E5%AC%A4%E9%83%BD%E6%9C%83/videos
+https://www.youtube.com/c/GammaRay%E8%BB%9F%E9%AB%94%E5%B7%A5%E4%BD%9C%E5%AE%A4/videos
+https://www.youtube.com/c/%E5%BD%AD%E5%BD%AD%E7%9A%84%E8%AA%B2%E7%A8%8B/videos
+https://www.youtube.com/channel/UCT81jejfi3660ugmYypDozA/videos
+https://ithelp.ithome.com.tw/users/20121148/ironman/2924
+https://www.youtube.com/c/%E5%91%A8%E8%8E%AB%E7%83%A6/videos
+https://www.runoob.com/python/python-tutorial.html
+語法
+運算式
+andx and y布尔"与" - 如果 x 为 False，x and y 返回 False，否则它返回 y 的计算值。(a and b) 返回 20。orx or y布尔"或" - 如果 x 是非 0，它返回 x 的计算值，否则它返回 y 的计算值。(a or b) 返回 10。notnot x布尔"非" - 如果 x 为 True，返回 False 。如果 x 为 False，它返回 True。not(a and b) 返回 False
+if
+if 判断条件1:    执行语句1……elif 判断条件2:    执行语句2……elif 判断条件3:    执行语句3……else:    执行语句4……
+# continue 和 break 用法 i = 1while i < 10:       i += 1    if i%2 > 0:     # 非双数时跳过输出        continue    print i         # 输出双数2、4、6、8、10 i = 1while 1:            # 循环条件为1必定成立    print i         # 输出1~10    i += 1    if i > 10:     # 当i大于10时跳出循环        break
+pass 
+pass 语句Python pass 是空语句，是为了保持程序结构的完整性。pass 不做任何事情，一般用做占位语句。def function():  # 在Python3.x的时候pass可以写或不写  pass
+continue
+continue 语句Python continue 语句跳出本次循环，而break跳出整个循环。continue 语句用来告诉Python跳过当前循环的剩余语句，然后继续进行下一轮循环。continue语句用在while和for循环中。#!/usr/bin/python# -*- coding: UTF-8 -*-n = 0while n < 10:  n = n + 1  if n % 2 == 0:   # 如果n是偶数，执行continue语句    continue    # continue语句会直接继续下一轮循环，后续的print()语句不会执行  print(n)
+break 
+Python break 语句Python break语句，就像在C语言中，打破了最小封闭for或while循环。break语句用来终止循环语句，即循环条件没有False条件或者序列还没被完全递归完，也会停止执行循环语句。break语句用在while和for循环中。如果您使用嵌套循环，break语句将停止执行最深层的循环，并开始执行下一行代码。#!/usr/bin/python# -*- coding: UTF-8 -*- for letter in 'Python':   # 第一个实例  if letter == 'h':   break  print '当前字母 :', letter  var = 10          # 第二个实例while var > 0:          print '当前变量值 :', var  var = var -1  if var == 5:  # 当变量 var 等于 5 时退出循环   break print "Good bye!"
+for
+for 循环嵌套语法：for iterating_var in sequence: for iterating_var in sequence:  statements(s) statements(s)    #!/usr/bin/python# -*- coding: UTF-8 -*- fruits = ['banana', 'apple', 'mango']for index in range(len(fruits)):  print ('当前水果 : %s' % fruits[index]) print ("Good bye!")
+#!/usr/bin/python# -*- coding: UTF-8 -*-for num in range(10,20):  # 迭代 10 到 20 之间的数字   for i in range(2,num): # 根据因子迭代      if num%i == 0:      # 确定第一个因子         j=num/i          # 计算第二个因子         print ('%d 等于 %d * %d' % (num,i,j))         break            # 跳出当前循环   else:                  # 循环的 else 部分      print ('%d 是一个质数' % num)
+while
+while 循环嵌套语法：while expression:  while expression:   statement(s)  statement(s)  #!/usr/bin/python# -*- coding: UTF-8 -*- i = 2while(i < 100):  j = 2  while(j <= (i/j)):   if not(i%j): break   j = j + 1  if (j > i/j) : print i, " 是素数"  i = i + 1 print "Good bye!"
+判斷式
+try except 錯誤與異常
+判斷式
+==等於 - 比較對像是否相等(a == b) 返回假。!=不等於 - 比較兩個對像是否不相等(a != b) 返回真。<>不等於 - 比較兩個對像不相等。(a <> b) 返回 true。這個相似性 != 。>大於 - 返回x是否大於y(a > b) 返回假。<小於 - 返回x是否小於。所有比較相同1返回表示真，返回0表示假。(a < b) 返回真。>=大於等於 - 返回x是否大於等於y。(a >= b) 返回假。<=小於等於 - 返回 x 小於等於 y。(a <= b) 返回真。
+賦值衝突
+賦值衝突後果變量a為10，變量b為20：相見描述實例=簡單的擊中c = a + b a + b 的運算結果將為 c+=加法撞擊c += a 絕對於 c = c + a-=減法命中c -= a 嚴格於 c = c - a*=乘法碰撞c *= a 嚴格於 c = c * a/=除法啟動c /= a 嚴格於 c = c / a%=取模觸發c %= a 完全於 c = c % a**=抗拒對抗c **= a 真的於 c = c ** a//=取整除引發c //= a 嚴格於 c = c // a
+&更多位與一位：參與操作的兩個值，如果兩個位都為1，則該位的結果為1，否則為0(a & b) 輸出結果 12 ，二進制解釋： 0000 1100|按位或一致：只要對應的二個二進位有一個為1時，結果位就為1。(a | b) 輸出結果 61 ，雙解釋： 0011 1101^兩個異位或相反：當兩個的二進位相異時，結果為1(a ^ b) 輸出結果 49 ，雙解釋： 0011 0001~按位取反矛盾：對數據的二進制位取反，把1變成0，把0變成1。~x奇異-x-1(~a ) 輸出結果 -61 ，二進制解釋： 1100 011，在一個有符號二進制數的補碼形式。<<左移動：左移動手術數的各二進全部左移等位，<<的數字了移動的右邊位，高位由低位指定，低位補0。a << 2 輸出結果 240 ，二進制解釋： 1111 0000>>移動右邊：把“>>”二食位的手柄數的進進全部右移部分，>>右邊的數字指定了移動的手指a >> 2 輸出結果 15 ，二進制解釋： 0000 1111
+迴圈
+字典
+字串
+字典
+函式
+字串函式
+數值函式
+自訂函式
+def functionname( parameters ):   "函数_文档字符串"   function_suite   return [expression]
+#!/usr/bin/python# -*- coding: UTF-8 -*-# 定义函数def printme( str ):   "打印任何传入的字符串"   print str   return# 调用函数printme("我要调用用户自定义函数!")printme("再次调用同一函数")
+传不可变对象实例实例(Python 2.0+)#!/usr/bin/python# -*- coding: UTF-8 -*- def ChangeInt( a ):  a = 10 b = 2ChangeInt(b)print b # 结果是 2
+传可变对象实例实例(Python 2.0+)#!/usr/bin/python# -*- coding: UTF-8 -*- # 可写函数说明def changeme( mylist ):  "修改传入的列表"  mylist.append([1,2,3,4])  print "函数内取值: ", mylist  return # 调用changeme函数mylist = [10,20,30]changeme( mylist )print "函数外取值: ", mylist实例中传入函数的和在末尾添加新内容的对象用的是同一个引用，故输出结果如下：函数内取值: [10, 20, 30, [1, 2, 3, 4]]函数外取值: [10, 20, 30, [1, 2, 3, 4]]
+#!/usr/bin/python# -*- coding: UTF-8 -*-#可写函数说明def printme( str ):   "打印任何传入的字符串"   print str   return#调用printme函数printme()
+关键字参数关键字参数和函数调用关系紧密，函数调用使用关键字参数来确定传入的参数值。使用关键字参数允许函数调用时参数的顺序与声明时不一致，因为 Python 解释器能够用参数名匹配参数值。以下实例在函数 printme() 调用时使用参数名：实例(Python 2.0+)#!/usr/bin/python# -*- coding: UTF-8 -*-#可写函数说明def printme( str ):   "打印任何传入的字符串"   print str   return#调用printme函数printme( str = "My string")以上实例输出结果：My string
+模組import
+自己的模組
+Numpy
+Pandas
+Flask
+Django
+日期和时间
+获取当前时间
+获取当前时间从返回浮点数的时间戳方式向时间元组转换，只要将浮点数传递给如localtime之类的函数。实例(Python 2.0+)#!/usr/bin/python# -*- coding: UTF-8 -*- import time localtime = time.localtime(time.time())print "本地时间为 :", localtime
+获取某月日历
+获取某月日历Calendar模块有很广泛的方法用来处理年历和月历，例如打印某月的月历：实例(Python 2.0+)#!/usr/bin/python# -*- coding: UTF-8 -*- import calendar cal = calendar.month(2016, 1)print "以下输出2016年1月份的日历:"print cal
+获取格式化的时间
+获取格式化的时间你可以根据需求选取各种格式，但是最简单的获取可读的时间模式的函数是asctime():实例(Python 2.0+)#!/usr/bin/python# -*- coding: UTF-8 -*- import time localtime = time.asctime( time.localtime(time.time()) )print "本地时间为 :", localtime以上实例输出结果：本地时间为 : Thu Apr 7 10:05:21 2016#!/usr/bin/python# -*- coding: UTF-8 -*- import time # 格式化成2016-03-20 11:45:39形式print time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())  # 格式化成Sat Mar 28 22:24:24 2016形式print time.strftime("%a %b %d %H:%M:%S %Y", time.localtime())   # 将格式字符串转换为时间戳a = "Sat Mar 28 22:24:24 2016"print time.mktime(time.strptime(a,"%a %b %d %H:%M:%S %Y"))以上实例输出结果：2016-04-07 10:25:09Thu Apr 07 10:25:09 20161459175064.0
+變數、運算
+#!/usr/bin/python# -*- coding: UTF-8 -*-counter = 100 # 赋值整型变量miles = 1000.0 # 浮点型name = "John" # 字符串print counterprint milesprint name
+Numbers（數字）String（字符串）List（列表）Tuple（元組）Dictionary（字典）
+數字類型：int（有符號整型）long（長整型，也可以代表八進制和十六進制）float（浮點型）complex（複數）
++　　 加 - 兩個對象相加　　　　　　　　　　a + b 輸出結果 30--　　- 得到負數一個減少一個數　　　　　　　　a - b 輸出結果 -10*　　 乘 - 兩個數相乘來返回一個被重複若干次的字符串　　a * b 輸出結果 200/　　 除 - x除以y　　　　　　　　　　b / a 輸出結果 2%　　取模 - 返回除法的餘數　　　　　　　　b % a 輸出結果 0**　　冪 - 返回x的y次冪　　　　　　　　a**b 為10的20次方，輸出結果100000000000000000000//　　取整除 - 返回商的部分除掉（取整）　　　　>>> 9 //2 4 >>> - 9 //2 - 5 
+数学函数
+数学函数
+数学函数abs(x)返回数字的绝对值，如abs(-10) 返回 10ceil(x)返回数字的上入整数，如math.ceil(4.1) 返回 5cmp(x, y)如果 x < y 返回 -1, 如果 x == y 返回 0, 如果 x > y 返回 1exp(x)返回e的x次幂(ex),如math.exp(1) 返回2.718281828459045fabs(x)返回数字的绝对值，如math.fabs(-10) 返回10.0floor(x)返回数字的下舍整数，如math.floor(4.9)返回 4log(x)如math.log(math.e)返回1.0,math.log(100,10)返回2.0log10(x)返回以10为基数的x的对数，如math.log10(100)返回 2.0max(x1, x2,...)返回给定参数的最大值，参数可以为序列。min(x1, x2,...)返回给定参数的最小值，参数可以为序列。modf(x)返回x的整数部分与小数部分，两部分的数值符号与x相同，整数部分以浮点型表示。pow(x, y)x**y 运算后的值。round(x [,n])返回浮点数x的四舍五入值，如给出n值，则代表舍入到小数点后的位数。sqrt(x)返回数字x的平方根
+随机数函数
+随机数函数choice(seq)从序列的元素中随机挑选一个元素，比如random.choice(range(10))，从0到9中随机挑选一个整数。randrange ([start,] stop [,step])从指定范围内，按指定基数递增的集合中获取一个随机数，基数默认值为 1random()随机生成下一个实数，它在[0,1)范围内。seed([x])改变随机数生成器的种子seed。如果你不了解其原理，你不必特别去设定seed，Python会帮你选择seed。shuffle(lst)将序列的所有元素随机排序uniform(x, y)随机生成下一个实数，它在[x,y]范围内。
+三角函数
+三角函数：函数描述acos(x)返回x的反余弦弧度值。asin(x)返回x的反正弦弧度值。atan(x)返回x的反正切弧度值。atan2(y, x)返回给定的 X 及 Y 坐标值的反正切值。cos(x)返回x的弧度的余弦值。hypot(x, y)返回欧几里德范数 sqrt(x*x + y*y)。sin(x)返回的x弧度的正弦值。tan(x)返回x弧度的正切值。degrees(x)将弧度转换为角度,如degrees(math.pi/2) ， 返回90.0radians(x)将角度转换为弧度
+数学常量
+数学常量pi数学常量 pi（圆周率，一般以π来表示）e数学常量 e，e即自然常数（自然常数）。
+列表(List)
+列表(List)序列是Python中最基本的数据结构。序列中的每个元素都分配一个数字 - 它的位置，或索引，第一个索引是0，第二个索引是1，依此类推。Python有6个序列的内置类型，但最常见的是列表和元组。序列都可以进行的操作包括索引，切片，加，乘，检查成员。此外，Python已经内置确定序列的长度以及确定最大和最小的元素的方法。列表是最常用的Python数据类型，它可以作为一个方括号内的逗号分隔值出现。列表的数据项不需要具有相同的类型创建一个列表，只要把逗号分隔的不同的数据项使用方括号括起来即可。如下所示：list1 = ['physics', 'chemistry', 1997, 2000]list2 = [1, 2, 3, 4, 5 ]list3 = ["a", "b", "c", "d"]
+類別
+類別繼承
+類別封裝
+圖形使用者介面設計
+正規表達式
+Class類別
+支援中文編碼
+#!/usr/bin/python# -*- coding: utf-8 -*-# 中文註解print("Hello, world.")
+print ("Hello, Python!")
+符串，如下实例：实例(Python 2.0+)#!/usr/bin/python var1 = 'Hello World!'var2 = "Python Runoob" print "var1[0]: ", var1[0]print "var2[1:5]: ", var2[1:5]字符串连接我们可以对字符串进行截取并与其他字符串进行连接，如下实例：实例(Python 2.0+)#!/usr/bin/python# -*- coding: UTF-8 -*- var1 = 'Hello World!' print "输出 :- ", var1[:6] + 'Runoob!'以上实例执行结果输出 :- Hello Runoob!转义字符在需要在字符中使用特殊字符时，python 用反斜杠 \ 转义字符。如下表：转义字符描述\(在行尾时)续行符\\反斜杠符号\'单引号\"双引号\a响铃\b退格(Backspace)\e转义\000空\n换行\v纵向制表符\t横向制表符\r回车\f换页\oyy八进制数，y 代表 0~7 的字符，例如：\012 代表换行。\xyy十六进制数，以 \x 开头，yy代表的字符，例如：\x0a代表换行\other其它的字符以普通格式输出字符串运算符下表实例变量 a 值为字符串 "Hello"，b 变量值为 "Python"：操作符描述实例+字符串连接>>>a + b'HelloPython'*重复输出字符串>>>a * 2'HelloHello'[]通过索引获取字符串中字符>>>a[1]'e'[ : ]截取字符串中的一部分>>>a[1:4]'ell'in成员运算符 - 如果字符串中包含给定的字符返回 True>>>"H" in aTruenot in成员运算符 - 如果字符串中不包含给定的字符返回 True>>>"M" not in aTruer/R原始字符串 - 原始字符串：所有的字符串都是直接按照字面的意思来使用，没有转义特殊或不能打印的字符。 原始字符串除在字符串的第一个引号前加上字母"r"（可以大小写）以外，与普通字符串有着几乎完全相同的语法。>>>print r'\n'\n>>> print R'\n'\n%格式字符串请看下一章节符串格式化符号:  符  号描述   %c 格式化字符及其ASCII码   %s 格式化字符串   %d 格式化整数   %u 格式化无符号整型   %o 格式化无符号八进制数   %x 格式化无符号十六进制数   %X 格式化无符号十六进制数（大写）   %f 格式化浮点数字，可指定小数点后的精度   %e 用科学计数法格式化浮点数   %E 作用同%e，用科学计数法格式化浮点数   %g %f和%e的简写   %G %F 和 %E 的简写   %p 用十六进制数格式化变量的地址格式化操作符辅助指令:符号功能*定义宽度或者小数点精度-用做左对齐+在正数前面显示加号( + )<sp>在正数前面显示空格#在八进制数前面显示零('0')，在十六进制前面显示'0x'或者'0X'(取决于用的是'x'还是'X')0显示的数字前面填充'0'而不是默认的空格%'%%'输出一个单一的'%'(var)映射变量(字典参数)m.n.m 是显示的最小总宽度,n 是小数点后的位数(如果可用的话)Python2.6 开始，新增了一种格式化字符串的函数 str.format()，它增强了字符串格式化的功能。Python 三引号Python 中三引号可以将复杂的字符串进行赋值。Python 三引号允许一个字符串跨多行，字符串中可以包含换行符、制表符以及其他特殊字符。三引号的语法是一对连续的单引号或者双引号（通常都是成对的用）。 >>> hi = '''hi there'''>>> hi  # repr()'hi\nthere'>>> print hi # str()hi there  
+元组
+Python的元组与列表类似，不同之处在于元组的元素不能修改。元组使用小括号，列表使用方括号。元组创建很简单，只需要在括号中添加元素，并使用逗号隔开即可。如下实例：实例(Python 2.0+)tup1 = ('physics', 'chemistry', 1997, 2000)tup2 = (1, 2, 3, 4, 5 )tup3 = "a", "b", "c", "d"#!/usr/bin/python tup1 = ('physics', 'chemistry', 1997, 2000)tup2 = (1, 2, 3, 4, 5, 6, 7 ) print "tup1[0]: ", tup1[0]print "tup2[1:5]: ", tup2[1:5]以上实例输出结果：tup1[0]: physicstup2[1:5]: (2, 3, 4, 5)
+字典(Dictionary)
+字典(Dictionary)字典是另一种可变容器模型，且可存储任意类型对象。字典的每个键值 key=>value 对用冒号 : 分割，每个键值对之间用逗号 , 分割，整个字典包括在花括号 {} 中 ,格式如下所示：d = {key1 : value1, key2 : value2 }注意：dict 作为 Python 的关键字和内置函数，变量名不建议命名为 dict。键一般是唯一的，如果重复最后的一个键值对会替换前面的，值不需要唯一。>>> tinydict = {'a': 1, 'b': 2, 'b': '3'}>>> tinydict['b']'3'>>> tinydict{'a': 1, 'b': '3'}值可以取任何数据类型，但键必须是不可变的，如字符串，数字或元组。一个简单的字典实例：tinydict = {'Alice': '2341', 'Beth': '9102', 'Cecil': '3258'}也可如此创建字典：tinydict1 = { 'abc': 456 }tinydict2 = { 'abc': 123, 98.6: 37 }
+return 
+return 语句return语句[表达式]退出函数，选择性地向调用方返回一个表达式。不带参数值的return语句返回None。之前的例子都没有示范如何返回数值，下例便告诉你怎么做：实例(Python 2.0+)#!/usr/bin/python# -*- coding: UTF-8 -*-# 可写函数说明def sum( arg1, arg2 ):   # 返回2个参数的和."   total = arg1 + arg2   print "函数内 : ", total   return total# 调用sum函数total = sum( 10, 20 )以上实例输出结果：函数内 :  30
+全局变量和局部变量
+全局变量和局部变量定义在函数内部的变量拥有一个局部作用域，定义在函数外的拥有全局作用域。局部变量只能在其被声明的函数内部访问，而全局变量可以在整个程序范围内访问。调用函数时，所有在函数内声明的变量名称都将被加入到作用域中。如下实例：实例(Python 2.0+)#!/usr/bin/python# -*- coding: UTF-8 -*- total = 0 # 这是一个全局变量# 可写函数说明def sum( arg1, arg2 ):  #返回2个参数的和."  total = arg1 + arg2 # total在这里是局部变量.  print "函数内是局部变量 : ", total  return total #调用sum函数sum( 10, 20 )print "函数外是全局变量 : ", total以上实例输出结果：函数内是局部变量 : 30函数外是全局变量 : 0
 
 
